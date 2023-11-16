@@ -20,6 +20,9 @@ public class SlGame
             {
                 gameOn = !gameBoard.isWinningPosition(
                     newGamePlayers[playerIndex].makeAMove());
+                System.out.println("\n");
+                if (!gameOn)
+                { System.out.println(newGamePlayers[playerIndex].getName() + " wins!"); }
             }
         }
     }

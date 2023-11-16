@@ -14,7 +14,7 @@ public class SlBoard
         for (int i=0; i<MOVE_ADJUSTMENTS.length; i++)
         {
             if (MOVE_ADJUSTMENTS[i][0] == movedToPosition)
-            { adjustedPosition += MOVE_ADJUSTMENTS[i][1]; break; }
+            { adjustedPosition = MOVE_ADJUSTMENTS[i][1]; break; }
         }
         return adjustedPosition;
     }

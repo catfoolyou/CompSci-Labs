@@ -5,9 +5,7 @@ public class SlPlayerGenerator
     private static final String[] PLAYER_NAMES = {"Bob", "Joe", "Bill", "Kevin"};
     
     public static SlPlayer[] newGamePlayers(SlBoard gameBoard, SlSpinner spinner)
-    {
-        return fillWithPlayers(newPlayersArray(), gameBoard, spinner);
-    }
+    { return fillWithPlayers(newPlayersArray(), gameBoard, spinner); }
 
     private static SlPlayer[] fillWithPlayers(
         SlPlayer[] gamePlayersArray, SlBoard gameBoard, SlSpinner spinner)
