@@ -2,7 +2,7 @@ package stepsladders;
 
 public class SlPlayer
 {
-    private String name;
+    private final String name;
     private final SlSpinner spinner;
     private final SlBoard gameBoard;
     private int position = 0;
@@ -17,4 +17,8 @@ public class SlPlayer
             this.position + spinnedNumber);
         return this.position;
     }
+
+    @Override
+    public String toString()
+    { return this.name + " is on space " + this.position + "."; }
 }
