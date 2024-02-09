@@ -1,9 +1,9 @@
 public class Professor extends Teacher{
 
-   private int office;
+   private String office;
    private boolean tenure;
 
-   public Professor(int a, int y, int s, String n, String subj, int o, boolean t){
+   public Professor(int a, int y, int s, String n, String subj, String o, boolean t){
       super(a, y, s, n, subj);
       office = o;
       tenure = t;

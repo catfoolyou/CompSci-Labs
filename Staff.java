@@ -10,6 +10,6 @@ public class Staff extends SchoolAssociate{
    }
 
    public String toString(){
-      return(super.toString() + " Salary: " + salary + ", Years Worked: " + years);
+      return(super.toString() + " Salary: $" + salary + " , Years Worked: " + years);
    }
 }
