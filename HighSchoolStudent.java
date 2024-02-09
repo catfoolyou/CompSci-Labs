@@ -1,8 +1,8 @@
 public class HighSchoolStudent extends K12Student{
 
-   private int gpa;
+   private double gpa;
 
-   public HighSchoolStudent(int a, int i, String n, int g, int gp){
+   public HighSchoolStudent(int a, int i, String n, int g, double gp){
       super(a, i, n, g);
       gpa = gp;
       setRole("High School Student");

@@ -1,8 +1,8 @@
 public class Student extends SchoolAssociate{
 
-   private int id;
+   private String id;
 
-   public Student(int a, int i, String n){
+   public Student(int a, String i, String n){
       super(a, n);
       id = i;
       setRole("Student");

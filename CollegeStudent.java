@@ -1,17 +1,17 @@
 public class CollegeStudent extends Student{
 
-   private int gpa;
-   private String major, status
+   private double gpa;
+   private String major, status;
 
-   public CollegeStudent(int a, int i, String n, int g, String m, String s){
+   public CollegeStudent(int a, String i, String n, double g, String m, String s){
       super(a, i, n);
       gpa = g;
-      major = ma;
+      major = m;
       status = s;
       setRole("College Student");
    }
 
    public String toString(){
-      return(super.toString() + " GPA: " + gpa + " Major: " + m + " Status: " + s);
+      return(super.toString() + " GPA: " + gpa + " Major: " + major + " Status: " + status);
    }
 }
