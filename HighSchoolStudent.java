@@ -2,7 +2,7 @@ public class HighSchoolStudent extends K12Student{
 
    private double gpa;
 
-   public HighSchoolStudent(int a, int i, String n, int g, double gp){
+   public HighSchoolStudent(int a, String i, String n, int g, double gp){
       super(a, i, n, g);
       gpa = gp;
       setRole("High School Student");
