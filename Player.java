@@ -1,37 +1,24 @@
-import java.util.*;
-import java.io.*;
-
-public class Player{
-   private String name;
-   private int space;
+public class Player
+{
+   private final String name;
+   private int currentSpace;
    
-   public Player(String n){
-      space = 0;
-      name = n;
-   }
+   public Player(String n)
+   { currentSpace = 0; name = n; }
    
    public void setSpace(int s){
-      space = s;
+      currentSpace = s;
    }
       
    public String getName(){
       return name;
    }
    
-   public int getSpace(){
-      return space;
-   }
+   public int getSpace() { return currentSpace; }
    
-   public String toString(String name, int space){
-      return name + " is on space " + space;
-   }
+   public String toString()
+   { return this.name + " is on space " + this.currentSpace; }
    
-   public boolean hasWon(int space){
-      if(space != 100){
-         return false;
-      }
-      else{
-         return true;
-      }
-   }
+   public boolean hasWon()
+   { return (this.currentSpace >= 100); }
 }
